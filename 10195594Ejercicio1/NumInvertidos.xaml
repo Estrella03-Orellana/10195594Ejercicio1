@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+   
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_10195594Ejercicio1.NumInvertidos"
+             Title="NumInvertidos">
+    <!--<Summary>
+        <Createddate> 25 may. 2024</Createddate>
+        <company> Bazar Rosario </company>
+        <lastmodificationdate> 28 may. 2024</lastmodificationdate>
+        <lastmodificationdescription>
+               Ultima modificación. Agregue la documentacion XML al programa
+        </lastmodificationdescription>
+        <lastmodifierautor> Estrella Orellana</lastmodifierautor>
+    </Summary>-->
+    <ScrollView Padding="20">
+    <VerticalStackLayout Spacing="20">
+        <Image Source="numerosInvertidos.jpg" WidthRequest="300" HorizontalOptions="Center"/>
+        <Label Text="Ejercicio 1 : solicitar 4 números y luego invertir el orden de los números"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
+        <Entry x:Name="Num1" Placeholder="Ingrese el primer numero" />
+            <Entry x:Name="Num2" Placeholder="Ingrese el segundo numero" />
+            <Entry x:Name="Num3" Placeholder="Ingrese el tercer numero" />
+            <Entry x:Name="Num4" Placeholder="Ingrese el cuarto numero" />
+            <Entry x:Name="EntryResultado" Placeholder="Resultado" />
+        <Button Text="Desordenar" Clicked="Button_Clicked" HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
